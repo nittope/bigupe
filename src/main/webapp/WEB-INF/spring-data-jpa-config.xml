@@ -6,7 +6,7 @@
     http://www.springframework.org/schema/data/jpa
     http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
  
-    <jpa:repositories entity-manager-factory-ref="entityManagerFactory" base-package="br.upe.bigupe.persistencia"/>
+    <jpa:repositories entity-manager-factory-ref="entityManagerFactory" base-package="br.com.bigupe.persistencia"/>
  
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
@@ -25,7 +25,7 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="jpaVendorAdapter" ref="jpaVendorAdapter"/>
         <!-- spring based scanning for entity classes-->
-        <property name="packagesToScan" value="br.upe.bigupe.entidade"/>
+        <property name="packagesToScan" value="br.com.bigupe.entidades"/>
     </bean>
  
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"/>

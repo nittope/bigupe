@@ -12,8 +12,8 @@
         http://www.springframework.org/schema/data/jpa
     	http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 
-	<context:component-scan base-package="br.upe.bigupe.ui" />
-	<context:component-scan base-package="br.upe.bigupe.negocio" />
+	<context:component-scan base-package="br.com.bigupe.ui" />
+	<context:component-scan base-package="br.com.bigupe.negocios" />
 
 
 	<mvc:annotation-driven

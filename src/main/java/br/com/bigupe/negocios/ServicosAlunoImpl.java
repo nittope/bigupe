@@ -54,7 +54,7 @@ public class ServicosAlunoImpl implements ServicosAluno {
         if (alunoAtualizar.getViagens().isEmpty())            
             repositorio.delete(alunoAtualizar);
         else{
-            alunoAtualizar.setAtivo(false);
+            //alunoAtualizar.setAtivo(false);
             repositorio.save(alunoAtualizar);
         }
         
